@@ -29,9 +29,7 @@ class SimpleLogger:
 
 
 class AutoRestartPlugin:
-    """Single-file plugin that restarts the server at a configured interval.
-
-    Behavior/contract:
+    """Behavior/contract:
     - on_enable(server): start a repeating timer that issues a restart command every interval.
     - on_disable(): cancel timer.
 
